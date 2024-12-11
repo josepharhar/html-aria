@@ -875,7 +875,8 @@
               [^button^]
             </th>
             <td>
-              <code>role=<a href="#index-aria-button">button</a></code>
+              <p><code>role=<a href="#index-aria-button">button</a></code></p>
+              <p>If the `button` is a child of a `select` element: <a>No corresponding role</a></p>
             </td>
             <td>
               <p>
@@ -901,6 +902,9 @@
                 <a data-cite="wai-aria-1.2#global_states">Global `aria-*` attributes</a> 
                 and any `aria-*` attributes applicable to the allowed roles.
               </p>
+              <hr>
+              <p>If the `button` is a child of a `select` element:
+                <strong class="nosupport"><a>No `role`</a> or `aria-*` attributes</strong></p>
             </td>
           </tr>
           <tr>
@@ -2931,7 +2935,7 @@
               [^selectedcontent^]
             </th>
             <td>
-              <a>No corresponding role. Note: This may change depending on how the HTML AAM PR goes.</a>
+              <a><code>role=<a href="#index-aria-generic">generic</a></code></a>
             </td>
             <td>
               <p>
